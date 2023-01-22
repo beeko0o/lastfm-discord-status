@@ -7,7 +7,7 @@ if (!process.env.DISCORD_CLIENT_ID || !process.env.LAST_FM_API_KEY || !process.e
     throw new Error("You must specify a DISCORD_CLIENT_ID, LAST_FM_API_KEY, LAST_FM_SECRET and a LAST_FM_USERNAME environment variable.");
 }
 
-const clientId = process.env.DISCORD_CLIENT_ID;
+const clientId = process.env.1066525155515433090;
 
 RPC.register(clientId);
 
@@ -17,8 +17,8 @@ client.on("ready", () => {
         try {
             // Attempt to get the track now playing on user's Last.fm profile.
             const curr = await getNowPlaying({
-                username: process.env.LAST_FM_USERNAME,
-                apiKey: process.env.LAST_FM_API_KEY,
+                username: process.env.beeko0_,
+                apiKey: process.env.a4fb61f1e066be7778f9532bb74cfb2c,
             });
             // Get the event currently occuring by comparing the previous track polled to the latest.
             const { event, track } = getEvent(prev, curr);
